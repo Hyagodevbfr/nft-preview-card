@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Kaushan+Script&family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+    --font-principal: 'Outfit', sans-serif;
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsla(215, 32%, 27%, 0.528);
+    --white: hsl(0, 0%, 100%);
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+}
+@media (min-width: 320px) and (max-width:1000px){
+    body{
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; 
+    }
+    main{
+        width: 260px;
+        padding: 20px;
+    }
+    .equilibrium-img {
+        width: 260px;
+        border-radius: 7px;
+    }
+    #image-card{
+        width: 100%;
+        position: relative;
+        border-radius: 7px;
+    }
+    #view{
+        position: absolute;
+        border-radius: 7px;
+        padding: 106px;
+        opacity: 0;
+    }
+    #view:hover{
+        opacity: .5;
+        background-color: var(--cyan);
+    }
+    footer{
+        width: 320px;
+    }
+}
+@media (min-width:1000px){
+    main{
+        width: 353px;
+        padding: 20px;
+    }
+    #view{
+        width: 55px;
+        height: 55px;
+        padding: 149px;
+    }
+}
+
+/* SETTINGS */
+body{
+    margin: 0%;
+    padding: 0%;
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--font-principal);
+    background-color: var(--main-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    user-select: none;
+
+}
+main{
+    padding: 20px;
+    background-color: var(--card-bg);
+    border-radius: 15px;
+    box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.404);
+}
+.equilibrium-img {
+    
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#image-card{
+    position: relative;
+    width: 100%;
+    border-radius: 7px;
+}
+#view{
+    position: absolute;
+    opacity: 0;
+}
+#view:hover{
+    opacity: .5;
+    background-color: var(--cyan);
+    cursor: pointer;
+    border-radius: 7px;
+}
+h1{
+    color: var(--white);
+    font-size: 1.03rem;
+}
+h1:hover{
+    color: var(--cyan);
+    cursor: pointer;
+}
+#description{
+    color: var(--soft-blue);
+    font-size: small;
+}
+.priceTime{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0;
+    font-size: 15px;
+}
+.priceTime img{
+    margin-right:9px;
+}
+.priceTime p{
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    font-size: smaller;
+}
+.priceTime #eth{
+    color: var(--cyan);
+    font-weight: 600;
+}
+hr{
+    border-color: var(--line);
+    border-top: none;
+}
+h5{
+    display: flex;
+    align-items: center;
+    color: var(--soft-blue);
+}
+#creator-img{
+    width: 33px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    margin-right: 15px;
+}
+#user{
+    color: var(--white);
+    margin-left: 3px;
+}
+#user:hover{
+    color: var(--cyan);
+    cursor: pointer;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: small;
+    color: var(--white);
+}
+footer a{
+    color: var(--white);
+    cursor: pointer;
+}
+footer a:hover{
+    color: var(--cyan);
+}
