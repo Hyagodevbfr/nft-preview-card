@@ -27,6 +27,9 @@
     .equilibrium-img {
         width: 260px;
         border-radius: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     #image-card{
         width: 100%;
@@ -49,14 +52,38 @@
 }
 @media (min-width:1000px){
     main{
-        width: 353px;
+        width: 300.797px;
+        height: 560px;
         padding: 20px;
     }
     #view{
         width: 55px;
         height: 55px;
-        padding: 149px;
+        padding: 123px;
     }
+    #view{
+        position: absolute;
+        opacity: 0;
+    }
+    #view:hover{
+        opacity: .5;
+        background-color: var(--cyan);
+        cursor: pointer;
+        border-radius: 7px;
+    }
+    .equilibrium-img {
+        width: 300px;
+        border-radius: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #image-card{
+        position: relative;
+        width: 100%;
+        border-radius: 7px;
+    }
+    
 }
 
 /* SETTINGS */
@@ -75,24 +102,18 @@ body{
 
 }
 main{
-    padding: 20px;
+    padding: 24px;
     background-color: var(--card-bg);
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.404);
 }
-.equilibrium-img {
-    
-    border-radius: 7px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 #image-card{
     position: relative;
     width: 100%;
     border-radius: 7px;
 }
-#view{
+/* #view{
     position: absolute;
     opacity: 0;
 }
@@ -101,10 +122,10 @@ main{
     background-color: var(--cyan);
     cursor: pointer;
     border-radius: 7px;
-}
+} */
 h1{
     color: var(--white);
-    font-size: 1.03rem;
+    font-size: 1.41rem;
 }
 h1:hover{
     color: var(--cyan);
@@ -112,14 +133,14 @@ h1:hover{
 }
 #description{
     color: var(--soft-blue);
-    font-size: small;
+    font-size: 1.1rem;
 }
 .priceTime{
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 15px 0;
-    font-size: 15px;
+    font-size: 1.2rem;
 }
 .priceTime img{
     margin-right:9px;
@@ -134,20 +155,28 @@ h1:hover{
     color: var(--cyan);
     font-weight: 600;
 }
+.priceTime #day{
+    color: var(--soft-blue);
+    font-weight: 600;
+}
 hr{
     border-color: var(--line);
     border-top: none;
 }
-h5{
+h4{
     display: flex;
     align-items: center;
     color: var(--soft-blue);
+    font-size: .98rem;
+    font-weight: 600;
 }
+
 #creator-img{
-    width: 33px;
+    width: 30px;
     border: 1px solid var(--white);
     border-radius: 50%;
     margin-right: 15px;
+    cursor: pointer;
 }
 #user{
     color: var(--white);
@@ -157,7 +186,7 @@ h5{
     color: var(--cyan);
     cursor: pointer;
 }
-footer{
+footer h4{
     display: flex;
     flex-wrap: wrap;
     font-size: small;
@@ -166,6 +195,7 @@ footer{
 footer a{
     color: var(--white);
     cursor: pointer;
+    margin-left: 2px;
 }
 footer a:hover{
     color: var(--cyan);
